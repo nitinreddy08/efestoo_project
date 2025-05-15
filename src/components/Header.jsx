@@ -20,8 +20,11 @@ const Header = () => {
         <input
           type="text"
           placeholder="Search"
-          className="w-72 px-4 py-1 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
+          className="w-72 px-4 py-1 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 text-black mr-2"
         />
+        <button className="px-4 py-1 rounded-full text-sm bg-blue-600 text-white hover:bg-blue-700">
+          search
+        </button>
       </div>
       {/* Right: Nav, Bell, Button, Avatar */}
       <div className="flex items-center gap-4">
