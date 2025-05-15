@@ -47,8 +47,8 @@ const Landing = () => {
         <div className="w-16 h-16 mr-8 z-0 hidden sm:block" />
       </div>
 
-      <div className="w-full flex flex-col sm:flex-row items-center justify-between border-y border-gray-200 bg-white px-4 sm:px-8 py-3 max-w-7xl">
-        <div className="flex flex-wrap gap-6 text-gray-600 text-sm justify-center sm:justify-start w-full sm:w-auto">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-between border-y border-gray-200 bg-white px-4 sm:px-8 py-3 max-w-full">
+        <div className="flex flex-wrap gap-6 text-gray-600 text-sm justify-center sm:justify-start w-full sm:w-full">
           <a href="" className="hover:underline uppercase whitespace-nowrap">
             About
           </a>
