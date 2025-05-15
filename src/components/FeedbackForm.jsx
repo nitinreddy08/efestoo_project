@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const FeedbackForm = () => {
   return (
@@ -9,16 +9,15 @@ const FeedbackForm = () => {
           <h2 className="text-2xl font-bold text-gray-800">
             We appreciate your feedback!
           </h2>
-          
         </div>
 
         {/* Subtitle */}
-        <div className='flex justify-between items-center mb-4'>
-        <p className="text-sm text-gray-600 mb-4">
-          Share your thoughts on the event and help us deliver better.
-        </p>
-        {/* Star Rating */}
-        <div className="flex">
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-sm text-gray-600 mb-4">
+            Share your thoughts on the event and help us deliver better.
+          </p>
+          {/* Star Rating */}
+          <div className="flex">
             {[...Array(5)].map((_, index) => (
               <svg
                 key={index}
@@ -31,7 +30,6 @@ const FeedbackForm = () => {
             ))}
           </div>
         </div>
-        
 
         {/* Textarea */}
         <textarea

@@ -4,17 +4,15 @@ import Image from "next/image";
 
 const Landing = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-gray-100 ">
-      {/* Header Image Section with background */}
+    <div className="w-full flex flex-col items-center bg-gray-100">
       <div
-        className="w-full relative flex items-center justify-between bg-white shadow-sm py-4 min-h-[260px]"
+        className="w-full relative flex items-center justify-between bg-white shadow-sm py-4 min-h-[300px]"
         style={{
           backgroundImage: "url('/building.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* Strong white and blur on left, both decrease gradually and end at 60% */}
         <div
           className="absolute inset-y-0 left-0 z-0 pointer-events-none"
           style={{ width: "60%" }}
@@ -31,46 +29,43 @@ const Landing = () => {
             }}
           />
         </div>
-        {/* Right half: dark overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent z-0" />
-        {/* Left: Logo and Info */}
-        <div className="flex items-center gap-4 relative z-10 px-8">
-          {/* Logo */}
-          <Image src="/logo.png" alt="Logo" width={150} height={150} />
-          <div>
-            <h1 className="text-xl font-bold text-gray-800 uppercase tracking-wide drop-shadow">
+        <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 relative z-10 px-4 sm:px-8 max-w-7xl w-full">
+          <div className="flex-shrink-0">
+            <Image src="/logo.png" alt="Logo" width={150} height={150} />
+          </div>
+          <div className="text-center sm:text-left">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 uppercase tracking-wide drop-shadow">
               Indian Institute of Technology
             </h1>
-            <div className="flex items-center gap-1 text-gray-600 mt-1">
+            <div className="flex items-center gap-1 text-gray-600 mt-1 justify-center sm:justify-start">
               <MapPin className="w-4 h-4" />
               <span className="text-sm">Hyderabad</span>
             </div>
           </div>
         </div>
-        {/* Right: Empty for spacing/alignment */}
-        <div className="w-16 h-16 mr-8 z-0" />
+        <div className="w-16 h-16 mr-8 z-0 hidden sm:block" />
       </div>
 
-      {/* Navigation Bar */}
-      <div className="w-full flex items-center justify-between border-y border-gray-200 bg-white px-8 py-3">
-        <div className="flex gap-6 text-gray-600 text-sm">
-          <a href="#" className="hover:underline uppercase">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-between border-y border-gray-200 bg-white px-4 sm:px-8 py-3 max-w-7xl">
+        <div className="flex flex-wrap gap-6 text-gray-600 text-sm justify-center sm:justify-start w-full sm:w-auto">
+          <a href="" className="hover:underline uppercase whitespace-nowrap">
             About
           </a>
-          <a href="#" className="hover:underline uppercase">
+          <a href="" className="hover:underline uppercase whitespace-nowrap">
             Our Library
           </a>
-          <a href="#" className="hover:underline uppercase">
+          <a href="" className="hover:underline uppercase whitespace-nowrap">
             Reviews & Ratings
           </a>
-          <a href="#" className="hover:underline uppercase">
+          <a href="" className="hover:underline uppercase whitespace-nowrap">
             Contact us
           </a>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-3 sm:mt-0">
           <a
-            href="#"
-            className="text-blue-600 text-sm flex items-center gap-1 hover:underline uppercase"
+            href=""
+            className="text-blue-600 text-sm flex items-center gap-1 hover:underline uppercase whitespace-nowrap"
           >
             View Website <Globe className="w-4 h-4 inline" />
           </a>
@@ -79,16 +74,13 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="w-full flex justify-center mt-16 mb-16">
-        <div className="w-[90%]">
+      <div className="w-full flex justify-center mt-16 mb-16 px-4 sm:px-0">
+        <div className="w-full max-w-5xl">
           <div className="rounded-lg border border-gray-200 bg-white overflow-hidden">
-            {/* Blue patterned background */}
             <div className="bg-blue-600 bg-[url('/pattern.svg')] bg-cover px-6 py-3 flex items-center justify-between">
               <div className="flex items-center gap-2 text-white font-semibold text-lg">
                 <span>About</span>
               </div>
-              {/* Small logo */}
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <Image
                   src="/small-logo.jpg"
@@ -99,7 +91,6 @@ const Landing = () => {
                 />
               </div>
             </div>
-            {/* Description */}
             <div className="px-6 py-4 text-gray-700 text-sm">
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="w-4 h-4 text-gray-600" />
