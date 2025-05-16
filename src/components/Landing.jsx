@@ -64,7 +64,7 @@ const Landing = () => {
         </div>
         <div className="flex items-center gap-4 mt-3 sm:mt-0">
           <a
-            href="nitinreddy-portfolio.vercel.app"
+            href="http://nitinreddy-portfolio.vercel.app/"
             className="text-blue-600 text-sm flex items-center gap-1 hover:underline uppercase whitespace-nowrap"
           >
             View Website <Globe className="w-4 h-4 inline" />
